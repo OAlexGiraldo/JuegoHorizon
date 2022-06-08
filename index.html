@@ -18,16 +18,18 @@
 <body>
   <header>
     <nav id="menu" class="nav1">
+      <div class="container-fluid">
 
       <div class="contenedor-nav w-100">
         <div class="logo">
           <img src="img/forza (1).png" alt="logo">
         </div>
 
-        <div class="enlaces" id="enlaces">
+        <div class="enlaces container-fluid d-flex" id="enlaces">
           <a href="#" id="enlace-inicio" class="btn-header">Inicio</a>
-          <a href="#" id="enlace-equipo" class="btn-header">Equipo</a>
           <a href="musica.html" id="enlace-trabajo" class="btn-header" >Musica</a>
+          <a href="Tienda.html" id="btnTienda" class="btn-header">Tienda</a>
+          <a href="acercade.html" id="btnTienda" class="btn-header">Developers</a>
           <a href="" id="btnregistro" class="sesion" data-bs-toggle="modal" data-bs-target="#modalregistro">Registrarse<a>
           <a href="" id="btnlogin" class="sesion" data-bs-toggle="modal" data-bs-target="#modalogin">iniciar Session</a>
           
@@ -51,8 +53,9 @@
           <span>&#9776;</span>
         </div>
       </div>
+    </div>
     </nav>
-    <div class="content">
+    <div class="content container-fluid w-100">
       <h1>Forza Horizon</h1>
       <a href="#">Descargar</a>
     </div>
@@ -60,12 +63,10 @@
       <source src="video/forza1.mp4" type="video/mp4">
     </video>
   </header>
-
-
    
   <main class="fondo_main ">
     <div class="container-fluid">
-      <div class="row col-12">
+      <div class="row row-cols-12">
         <div class="col-8 mb-2 ">
             <h1 class="titulo1">Caractericticas del juego</h1>
         </div>
@@ -80,9 +81,9 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row row-cols-12">
         <div class="col-4 mb-8">
-          <h1 class="text">Controles</h1>
+          <h1 class="text">Historia</h1>
           <p class="text2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio dolor ea cum magni magnam molestiae, aperiam labore quae praesentium quaerat possimus voluptate amet.</p>
         </div>
         <div class="col-8 mb-2">
@@ -90,19 +91,19 @@
 
         </div>
       </div>
-      <div class="row">
+      <div class="row row-cols-12">
         <div class="col-8 mb-2">
           <img src="img/carro2.jpg"  class="foto">
 
         </div>
         <div class="col-4 mb-8">
-          <h1 class="text">Controles</h1>
+          <h1 class="text">Pistas</h1>
           <p class="text2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio dolor ea cum magni magnam molestiae, aperiam labore quae praesentium quaerat possimus voluptate amet.</p>
         </div>
       </div>
-      <div class="row">
+      <div class="row row-cols-12">
         <div class="col-4 mb-8">
-          <h1 class="text">Controles</h1>
+          <h1 class="text">Multijugador</h1>
           <p class="text2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio dolor ea cum magni magnam molestiae, aperiam labore quae praesentium quaerat possimus voluptate amet.</p>
         </div>
         <div class="col-8 mb-2">
@@ -196,109 +197,54 @@
 </section>
   </main>
  
-  
 
-  <!--slider-->
-  <section class="slider ">
-    <div class="row d-flex justify-content-center container-fluid">
-      <div class="col-12 col-md-4 align-self-center">
-        <h3 class="text">Desarrolladores Web</h3>
-      </div>
+  <section>
+    <div class="slider_2">
+        <ul>
+            <li>
+                <img src="https://w0.peakpx.com/wallpaper/450/131/HD-wallpaper-forza-horizon-5-8k-forza-horizon-5-2021-games-games-deviantart.jpg">
+            </li>
+            <li>
+                <img src="https://www.xtrafondos.com/wallpapers/resized/forza-horizon-5-concepto-8213.jpg?s=large">
+            </li>
+            <li>
+                <img src="https://www.pixel4k.com/wp-content/uploads/2019/01/4k-forza-horizon-4_1547938447-1536x864.jpg">
+            </li>
+            <li>
+                <img src="https://i.pinimg.com/564x/fd/3a/25/fd3a2525e1b7071b1bc71f6e09e09de3.jpg">
+            </li>
+        </ul>
     </div>
-    <div class="slider_container container">
-      <img src="svg/leftarrow.svg" class="slider-arrow" id="before">
+    </section>
 
-      <section class="slider_body slider_body--show" data-id="1">
-        <div class="slider_texts">
-          <h2 class="subtitulo">¡Hola! Mi nombre es Luis Vanegas</h2>
-          <p class="slider_rewiew">Desarrolador web y creador de la pagina
-            Estudiante Universitario del cesde.
-          </p>
-          <p class="slider_contac">
-            GitHub:https://github.com/OAlexGiraldo<br>
-            Email:alexgiraldocar@outlook.com<br>
-            WhatsApp: 3002542441
-          </p>
+  <footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="img/Horizon.png" alt="Logo de SLee Dw">
+                </a>
+            </figure>
         </div>
-
-
-        <figure class="slider_foto">
-          <img src="img/PicsArt_06-16-03.32.21.jpg" class="slider_img">
-
-        </figure>
-
-      </section>
-
-
-      <section class="slider_body" data-id="2">
-        <div class="slider_texts">
-          <h2 class="subtitulo">¡Hola! Mi nombre es Alexander Giraldo</h2>
-          <p class="slider_rewiew">Desarrolador web y creador de la pagina
-            Estudiante Universitario del cesde
-          </p>
-          <p class="slider_contac">
-            GitHub:https://github.com/OAlexGiraldo<br>
-            Email:alexgiraldocar@outlook.com<br>
-            WhatsApp: 3002542441
-          </p>
+        <div class="box">
+            <h2>TU AVENTURA HORIZON POR EXCELENCIA</h2>
+            <p>Tu aventura Horizon por excelencia te espera! Explora los dinámicos paisajes de mundo abierto y en constante evolución de México con una acción de conducción ilimitada y divertida en cientos de los mejores autos del mundo</p>
+            
         </div>
-
-
-        <figure class="slider_foto">
-          <img src="img/Developper/Alexander.JPG" class="slider_img">
-
-        </figure>
-
-      </section>
-      <section class="slider_body" data-id="3">
-        <div class="slider_texts">
-          <h2 class="subtitulo">¡Hola! Mi nombre es Santiago Mesa</h2>
-          <p class="slider_rewiew">Desarroladora web y creadora de la pagina</p>
-          <p class="slider_contac">
-            GitHub:https://github.com/OAlexGiraldo<br>
-            Email:alexgiraldocar@outlook.com<br>
-            WhatsApp: 3002542441
-          </p>
+        <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="red-social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-github"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
         </div>
-
-
-        <figure class="slider_foto">
-          <img src="" class="slider_img">
-
-        </figure>
-
-      </section>
-
-
-
-      <img src="svg/arrow.svg" class="slider_arrow" id="after">
     </div>
-  </section>
-
-
-  <footer>
-
-    <div class="container-fluid p-5 bg-dark text-white">
-
-      <div class="row text-center">
-        <div class="col-12 col-md-4">
-          <p>Lorem ipsum dolor sit.</p>
-        </div>
-        <div class="col-12 col-md-4">
-          <p>Lorem ipsum dolor sit.</p>
-          <p>Lorem ipsum dolor sit.</p>
-        </div>
-        <div class="col-12 col-md-4">
-          <p>Lorem ipsum dolor sit.</p>
-          <p>Lorem ipsum dolor sit.</p>
-        </div>
-      </div>
+    <div class="grupo-2">
+        <small>&copy; 2022 <b>Forza Horizon</b> - Todos los Derechos Reservados.</small>
     </div>
-    <button type="button" class="btn btn-primary w-100"  href="musica.html">iniciar Session</button>
-
-  </footer>
-
-
+</footer>
 
   <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

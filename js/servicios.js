@@ -3,18 +3,13 @@
 //1.declaro la uri(url+endpoint) idicar a donde va
 
 const URI="https://api.spotify.com/v1/artists/7rNbdH4pgrnwguvzxhA2Ek/top-tracks?market=US"
+//https://api.spotify.com/v1/albums/7IAB2sKMWwni4vmapc4PCq/tracks?market=US&limit=20&offset=5
 //7rNbdH4pgrnwguvzxhA2Ek-jorge celedon
 //3OcvS8PzSGYMBvLdzY6g3e-silvestre Dangong
 //4SsVbpTthjScTS7U2hmr1X-Arcangel
-import {consultar} from './consultas.js'
-import {generarToken} from './generar.js'
-
-
-let token=await generarToken()
-console.log(token)
 //2.declaro los parametros de la peticion´ indicar que va hacer
 
-const TOKEN=" Bearer BQAgZyiGrLpGVLxZ2rFI9LYfVUGd6jf4mpPob8zq42O2-Jm7ypKRG8JGgRih5i9dQjOErCNW6ocvYa-xdyK3Q202r1hZ5LOUGKORnr3YgBR3JR1nJiIiqH0GpjRoTZbe_10Dse30p5rCMvW-7QYGljuvlQqHc9HIa7Y"
+const TOKEN="Bearer BQBoa3Y_dvdtCBmPYxYngT4OCJWlY6gOhcUExVzLR_1B74SGPAE82LW4LEpkZBnF9Y0-AtX-RZe--PgXA-WAkymRNuSM--cBRoHPTtwcOVsqrfSw9LE6cmDZIk_X3uH099l3CdDPPdIbOFZSH5ojgfFsyUYKLPOIYK4"
 
 const PETICION={
     method:"GET",
@@ -27,8 +22,8 @@ fetch(URI,PETICION)
     return(respuesta.json())    
 })
 .then(function(respuesta){
-    console.log(respuesta.items)//respuesta objeto
-    //console.log(respuesta.tracks[2].preview_url)
+    console.log(respuesta.tracks)//respuesta objeto
+    console.log(respuesta.tracks[2].preview_url)
     pintarCanciones(respuesta.tracks)
     
 })
@@ -40,7 +35,7 @@ fetch(URI,PETICION)
 function pintarCanciones(canciones){
     let fila=document.getElementById("fila")
     canciones.forEach(function(cancion){
-        //console.log(cancion)
+        console.log(cancion)
         console.log(cancion.name)
         console.log(cancion.preview_url)
        
@@ -57,7 +52,7 @@ function pintarCanciones(canciones){
         audio.setAttribute("controls","controls")
         audio.src=cancion.preview_url
 
-       let imagen=document.createElement("img")
+        let imagen=document.createElement("img")
         imagen.classList.add("card-img-top")
         imagen.src=cancion.album.images[0].url
 
@@ -67,7 +62,7 @@ function pintarCanciones(canciones){
 
         //TRAVERSING-PADRES E HIJO
         tarjeta.appendChild(name)
-       tarjeta.appendChild(imagen)
+        tarjeta.appendChild(imagen)
         tarjeta.appendChild(audio)
         col.appendChild(tarjeta)
         fila.appendChild(col)
@@ -75,7 +70,7 @@ function pintarCanciones(canciones){
 }
 //rutina para consumir api con metodo post
 //1.uri para donde voy
-/*const URIPOST= 'https://accounts.spotify.com/api/token'
+const URIPOST= 'https://accounts.spotify.com/api/token'
 
 //2. Almaceno los datos que voy a enviar
 let dato1='grant_type=client_credentials'
@@ -101,6 +96,6 @@ fetch(URIPOST,PETICIONPOST)
 })
 .catch(function(respuesta){
     console.log(respuesta)
-})*/
+})
 
 //json es un metodo
